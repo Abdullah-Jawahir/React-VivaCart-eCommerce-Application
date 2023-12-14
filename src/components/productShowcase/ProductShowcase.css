@@ -1,0 +1,160 @@
+.product-showcase {
+
+    margin: 3em auto;
+    margin-bottom: 4em;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    gap: 50px;
+
+}
+
+.showcase-left {
+
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    gap: 10px;
+    height: 100%;
+}
+
+.showcase-left .left {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.showcase-left .left img {
+
+    height: 120px;
+}
+
+.showcase-left .right img{
+
+    height: 510px;
+    object-fit: cover;
+}
+
+
+.showcase-right {
+
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: flex-start;
+    gap: 10px;
+    color: #333;
+}
+
+.showcase-right h2 {
+
+    font-weight: 500;
+}
+
+.showcase-right .ratings {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    margin-bottom: 20px;
+
+}
+
+.showcase-right .prices {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-weight: 550;
+    margin-bottom: 10px;
+}
+
+.prices .old-price {
+
+    text-decoration: line-through;
+    color: #a5a5a5;
+}
+
+.prices .new-price {
+
+    font-size: 1.2rem;
+    color: #ff4141;
+}
+
+.showcase-right .product-desc {
+    
+    margin-bottom: 20px;
+}
+
+.product-size {
+
+    margin-bottom: 15px;
+}
+
+.product-size h4{
+
+    color: #575757;
+    margin-bottom: 20px;
+    /* font-size: 1.6rem; */
+}
+
+.product-size .sizes {
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.sizes .size {
+
+    background-color: #fbfbfb;
+    border: 1px solid #e6e6e6;
+    width: 50px;
+    height: 50px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: .9rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.sizes .size:active {
+
+    background-color: #f3f3f3;
+}
+
+.showcase-right button {
+
+    padding: 10px 30px;
+    border-radius: 3px;
+    background-color: #ff4141;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #f7f7f7;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.showcase-right .features {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.features p {
+
+    text-transform: capitalize;
+}

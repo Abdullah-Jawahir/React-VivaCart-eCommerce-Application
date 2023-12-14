@@ -1,0 +1,95 @@
+.login-signup {
+
+    background-color: #fae3ff;
+    padding: 3em 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-signup-form {
+
+    padding: 30px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 50%;
+    min-width: 300px;
+    max-width: 800px;
+} 
+
+.login-signup-form h3 {
+
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.form-inputs {
+
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-inputs input {
+
+    padding: 15px;
+    outline: none;
+    border: 1px solid lightgray;
+    font-size: .9rem;
+    color: #646464;
+}
+
+.form-inputs.hide-username input:first-child{
+
+    display: none;
+}
+
+.login-signup-form button {
+
+    padding: 15px 10px;
+    border: none;
+    outline: none;
+    background-color: #ff4141;
+    color: #f7f7f7;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.login-signup-form .click-text {
+
+    font-size: .9rem;
+    margin-bottom: 15px;
+}
+
+.login-signup-form .click-text span{
+
+    color: #ff4141;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.login-signup-form .terms {
+
+    display: flex;
+    align-items: self-start;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.terms input {
+
+    margin-top: 4px;
+}
+

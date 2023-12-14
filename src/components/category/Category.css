@@ -1,0 +1,28 @@
+.category {
+
+    width: 100%;
+    padding: 2em 7em;
+}
+
+.banner {
+
+    height: 250px;
+}
+
+.banner img {
+
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+.products {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 20px;
+    row-gap: 40px;
+    margin: 0 auto;
+}

@@ -1,0 +1,47 @@
+.prod-desc {
+
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
+    font-size: .9rem;
+    margin-bottom: 2em;
+}
+
+.prod-desc .desc-header {
+
+    display: flex;
+    align-items: center;
+
+}
+
+.desc-header div {
+
+    padding: 15px 25px;
+    border: 1px solid rgb(207, 207, 207);
+    text-transform: capitalize;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.desc-header div:active,  .desc-header div:first-child{
+
+    background-color: #f3f3f3;
+}
+
+.prod-desc .desc-body {
+
+    border: 1px solid rgb(207, 207, 207);
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 20px;
+}
+
+.desc-body p {
+
+    font-size: .9rem;
+    text-align: justify;
+}

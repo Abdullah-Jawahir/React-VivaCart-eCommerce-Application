@@ -1,0 +1,14 @@
+.breadcrumb {
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin-bottom: 2em;
+    text-transform: capitalize;
+}
+
+.breadcrumb img {
+
+    height: 15px;
+}

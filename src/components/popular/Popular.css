@@ -1,0 +1,42 @@
+.popular {
+
+    width: 100%;
+    margin-bottom: 3em;
+
+}
+
+.popular h2 {
+
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 550;
+    width: fit-content;
+    margin: 2em auto;
+}
+
+.popular h2::after {
+
+    position: absolute;
+    content: '';
+    bottom: -15px;
+    left: 3px;
+    width: 50%;
+    height: 5px;
+    background-color: #ff4141;
+}
+
+.popular-items {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 0 1em;
+    gap: 25px;
+    row-gap: 40px;
+    width: 85%;
+    margin: 0 auto;
+}
