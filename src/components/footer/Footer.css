@@ -20,6 +20,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 25px;
     font-weight: 500;
 }
@@ -53,4 +54,31 @@ footer hr {
 
     width: 100%;
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 425px) {
+
+    footer {
+
+        padding: 2em 1em;
+    }
+
+    .footer-navbar {
+
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    footer hr {
+
+        text-align: center;
+    }
+
+    .footer-bottom {
+
+        text-align: center;
+    }
 }
