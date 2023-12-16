@@ -9,7 +9,7 @@ export const CartItems = () => {
 
     return (
         <div className='cart-items'>
-            <div className="row cart-items-header">
+            <div className="cart-items-header">
                 <span>product</span>
                 <span>title</span>
                 <span>price</span>
@@ -17,6 +17,10 @@ export const CartItems = () => {
                 <span>total</span>
                 <span>remove</span>
             </div>
+
+            <h2 className="cart-items-header-sm">
+                Cart Items
+            </h2>
 
             <div className="cart-items-rows">
                 {all_products.map((prod) => (
@@ -27,12 +31,12 @@ export const CartItems = () => {
                             <p className='prod-price'>${prod.new_price}</p>
                             <span className='prod-quantity'>{cartProducts[prod.id]}</span>
                             <p className='total-price'>${prod.new_price * cartProducts[prod.id]}</p>
-                            <img
-                                className='remove-prod-icon'
+                            <i
+                                className='bx bx-x remove-prod-icon'
                                 src={removeIcon}
                                 alt=""
                                 onClick={() => removeFromCart(prod.id)}
-                            />
+                            ></i>
                         </div>
                     )
                 ))}

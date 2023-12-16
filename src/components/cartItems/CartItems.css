@@ -18,12 +18,21 @@
 
     padding: 1em 0;
     border-bottom: 1px solid gray;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 40px;
 }
 
 .cart-items-header span {
 
     font-weight: 550;
     text-transform: capitalize;
+}
+
+.cart-items-header-sm {
+
+    display: none;
 }
 
 .cart-items-rows {
@@ -62,4 +71,128 @@
 .row-item .remove-prod-icon {
 
     cursor: pointer;
+    font-size: 2rem;
+    color: #636363;
+}
+
+@media screen and (max-width: 770px) {
+    .cart-items {
+
+        padding: 3em;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .cart-items {
+
+        padding: 1em;
+        padding-bottom: 3em;
+        justify-content: start;
+        max-height: 50svh;
+        overflow-y: scroll;
+    }
+
+    .cart-items .row {
+
+        grid-template-columns: none;
+        
+    }
+
+    .cart-items-header {
+
+        display: none;
+        border: none;
+        visibility: collapse;
+        
+    }
+
+    .cart-items-header span {
+
+        display: none;
+        visibility: collapse;
+    }
+
+    .cart-items-header-sm {
+
+        display: block;
+        margin-bottom: 40px;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #333;
+        position: relative;
+        width: fit-content;
+    }
+
+    .cart-items-header-sm::after {
+
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 3px;
+        width: 50%;
+        height: 5px;
+        background-color: #ff4141;
+    }
+
+    .cart-items-rows {
+
+        gap: 30px;
+    }
+
+    .cart-items-rows .row-item {
+
+        padding: 1.5rem 1rem;
+        grid-template-areas: 
+        
+        'prod-img prod-title remove-prod-icon'
+        'prod-quantity prod-price remove-prod-icon'
+        
+        ;
+        border: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        border-radius: 5px;
+        gap: 25px;
+    }
+
+    .row-item .prod-img {
+
+        grid-area: prod-img;
+        height: 100px;
+        border-radius: 5px;
+    }
+
+    .row-item .prod-title {
+
+        grid-area: prod-title;
+    }
+
+    .row-item .prod-price {
+
+        grid-area: prod-price;
+        font-weight: 500;
+        font-size: 1.3rem;
+
+    }
+
+    .row-item .prod-quantity {
+
+        grid-area: prod-quantity;
+        font-weight: 500;
+        font-size: 1rem;
+        width: 50px;
+        height: 50px; 
+        border-radius: 5px;
+    }
+
+    .row-item .total-price {
+
+        grid-area: total-price;
+        display: none;
+    }
+
+    .row-item .remove-prod-icon {
+
+        grid-area: remove-prod-icon;
+        font-size: 3rem;
+    }
 }
