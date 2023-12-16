@@ -76,6 +76,7 @@
     .products {
 
         gap: 50px;
+        row-gap: 70px;
     }
 
     .explore-btn {
