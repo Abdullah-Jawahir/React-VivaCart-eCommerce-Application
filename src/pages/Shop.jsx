@@ -7,12 +7,12 @@ import { NewsLetter } from '../components/newsletter/NewsLetter'
 
 export const Shop = () => {
     return (
-        <div>
+        <>
             <Hero />
             <Popular />
             <Offers />
             <NewCollections />
             <NewsLetter />
-        </div>
+        </>
     )
 }

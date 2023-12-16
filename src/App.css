@@ -32,3 +32,17 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+.app {
+
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1500px) {
+    * {
+
+        font-size: 22px;
+    }
+}

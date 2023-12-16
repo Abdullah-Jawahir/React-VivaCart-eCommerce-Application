@@ -10,7 +10,7 @@
     flex: 0 1 25%;
     min-width: 250px; 
     max-width: 500px;
-    max-height: 400px;
+    max-height: 600px;
 }
 
 
@@ -22,6 +22,7 @@
 .item {
 
     width: 100%;
+    gap: 0;
 }
 
 .item img {
@@ -66,5 +67,33 @@
     .item .item-prices {
 
         justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .item-card {
+
+        max-height: max-content;
+        width: 100%;
+    }
+
+    .item {
+
+        height: 100%;
+        gap: 30px;
+        justify-content: space-between;
+
+    }
+
+    .item img, .item p {
+
+        margin-bottom: 20px;
+    }
+
+
+    .item img {
+
+        height: 700px;
+
     }
 }

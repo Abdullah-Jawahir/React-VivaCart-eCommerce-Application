@@ -1,9 +1,9 @@
 .navbar {
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding-bottom: 5px;
+    padding: 0 3em;
     box-shadow: 0 1px 3px -2px #333;
     position: relative;
     height: 80px;
@@ -121,11 +121,30 @@
     font-weight: 550;
 }
 
+@media screen and (min-width: 1500px) {
+    .navbar {
+
+        padding: 0;
+        height: 100px;
+    }
+
+    .nav-list {
+
+        gap: 100px;
+    }
+
+    .nav-list .nav-item a {
+
+        font-size: 1.1rem;
+        letter-spacing: 3px;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
 
     .navbar {
 
-        justify-content: space-between;
         padding: 0 40px;
     }
 
