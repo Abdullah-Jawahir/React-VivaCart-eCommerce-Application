@@ -2,3 +2,18 @@
 
     padding: 2em 7em;
 }
+
+@media screen and (max-width: 770px) {
+    .product {
+
+        padding: 2em 3em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .product {
+
+        padding: 0 1em 2em 1em;
+    }
+}
+

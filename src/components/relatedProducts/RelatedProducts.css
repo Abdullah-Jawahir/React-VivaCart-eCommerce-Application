@@ -38,3 +38,17 @@
     row-gap: 40px;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 430px) {
+    .related-products h2 {
+
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .related-products h2 {
+
+        font-size: 1.8rem;
+    }
+}
