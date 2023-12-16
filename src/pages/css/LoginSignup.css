@@ -17,7 +17,7 @@
     justify-content: space-between;
     width: 50%;
     min-width: 300px;
-    max-width: 800px;
+    max-width: 1000px;
 } 
 
 .login-signup-form h3 {
@@ -91,5 +91,46 @@
 .terms input {
 
     margin-top: 4px;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .login-signup {
+
+        padding: 3em;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .login-signup {
+
+        padding: 2em 1em;
+    }
+
+    .login-signup-form {
+
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .login-signup {
+
+        padding: 3em 1em;
+    }
+
+    .login-signup-form {
+
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 330px) {
+
+    .login-signup {
+
+        padding: 3em 0;
+    }
 }
 
