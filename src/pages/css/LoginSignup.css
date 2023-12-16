@@ -93,6 +93,27 @@
     margin-top: 4px;
 }
 
+@media screen and (min-width: 1500px) {
+    .login-signup {
+
+        padding: 5em 0;
+    }
+
+    .login-signup-form {
+
+        padding: 3em;
+        gap: 20px;
+        width: 90%;
+        max-width: 1300px;
+    }
+
+    .login-signup-form input {
+
+        font-size: 1rem;
+        padding: 20px 30px;
+        margin-bottom: 10px;
+    }
+}
 
 @media screen and (max-width: 1050px) {
     .login-signup {
