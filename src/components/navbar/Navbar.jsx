@@ -22,7 +22,6 @@ export const Navbar = () => {
     const handleBxIconClick = () => {
 
         setIsBxIconClicked((prev) => !prev);
-        setActiveMenu("");
     }
 
 

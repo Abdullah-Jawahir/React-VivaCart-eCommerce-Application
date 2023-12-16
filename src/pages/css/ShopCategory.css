@@ -52,3 +52,54 @@
 
     transform: scale(.98);
 }
+
+
+@media screen and (max-width: 1050px) {
+
+    .shop-category {
+
+        padding: 2em 4em;
+    }
+
+    .banner {
+
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner img {
+
+        object-fit: cover;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+
+    .shop-category {
+
+        padding: 2em 3em;
+    }
+
+    .banner {
+
+        height: 150px;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+
+    .shop-category {
+
+        padding: 1em;
+    }
+
+    .banner {
+
+        display: none;
+    }
+}

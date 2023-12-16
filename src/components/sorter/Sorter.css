@@ -36,3 +36,21 @@
     transform: translateY(-50%);
     right: 20px;
 }
+
+@media screen and (max-width: 770px) {
+
+    .sorter {
+
+
+        justify-content: space-between;
+        width: 95%;
+        margin:  0 auto 20px;
+        padding-top: 1em;
+
+    }
+
+    .sorter .sorter-left p{
+
+        width: 80%;
+    }
+}
