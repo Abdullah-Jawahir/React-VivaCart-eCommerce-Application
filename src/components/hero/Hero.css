@@ -85,3 +85,67 @@
     width: auto;
     object-fit: cover;
 }
+
+
+@media screen and (max-width: 768px) {
+    .hero {
+
+        align-items: center;
+    }
+
+    .hero-texts {
+
+        margin-top: 4em;
+        margin-bottom: 3em;
+        gap: 10px;
+        margin-left: 1em;
+    }
+
+    .hero-texts h4 {
+
+        font-size: 1rem;
+    }
+
+    .hero-texts h1 {
+
+        font-size: 2.8rem;
+        line-height: 1.1;
+    }
+
+    .hero-texts h1 img {
+
+        height: 45px;
+    }
+
+    .hero-img {
+
+        height: 360px;
+        margin-right: 1em;
+    }
+
+    .hero-btn {
+
+        font-size: .8rem;
+    }
+
+    .hero-btn img {
+
+        width: 15px;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .hero-img {
+
+        display: none;
+    }
+
+    .hero-texts {
+
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+        gap: 15px;
+    }
+}

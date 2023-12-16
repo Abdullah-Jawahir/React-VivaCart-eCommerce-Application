@@ -55,6 +55,7 @@
     padding: 15px 30px;
     position: relative;
     width: 100%;
+    padding-right: 33%;
 }
 
 .letter-box form button {
@@ -72,4 +73,59 @@
     width: 30%;
     min-width: max-content;
     cursor: pointer;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .newsletter {
+
+        padding: 5em 3em 3em;
+    }
+
+    .newsletter h2 {
+
+        font-size: 2.4rem;
+        margin-bottom: 30px;
+    }
+
+    .newsletter form {
+
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+
+    .newsletter {
+
+        padding: 4em 1em;
+    }
+
+    .newsletter h2 {
+
+        font-size: 2.2rem;
+    }
+
+
+    .newsletter p {
+
+        text-align: center;
+    }
+
+    .letter-box {
+
+        padding: 3em 10px;
+    }
+
+    .newsletter form {
+
+        width: 100%;
+    }
+
+    .newsletter form input {
+
+        padding-left: 20px;
+    }
 }

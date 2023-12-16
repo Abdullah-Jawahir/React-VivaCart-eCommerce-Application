@@ -40,3 +40,25 @@
     width: 85%;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 768px) {
+    .popular-items {
+
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .popular h2 {
+
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .popular h2 {
+
+        font-size: 1.7rem;
+    }
+}

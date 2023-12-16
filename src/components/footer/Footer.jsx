@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 
 export const Footer = () => {
 
-    const date = new Date();
+    const curYear = new Date().getFullYear();
     return (
         <>
             <footer>
@@ -36,7 +36,7 @@ export const Footer = () => {
                 <hr />
 
                 <div className="footer-bottom">
-                    <p>&copy; Copyright {date.getFullYear()}. All Rights Reserved</p>
+                    <p>&copy; Copyright {curYear}. All Rights Reserved</p>
                 </div>
             </footer>
         </>

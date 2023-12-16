@@ -40,3 +40,25 @@
     width: 85%;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 768px) {
+    .new-collections-products {
+
+        padding: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .new-collections h2 {
+
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .new-collections h2 {
+
+        font-size: 1.7rem;
+    }
+}
