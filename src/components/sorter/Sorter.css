@@ -54,3 +54,18 @@
         width: 80%;
     }
 }
+
+@media screen and (min-width: 1500px) {
+    .sorter {
+
+        justify-content: space-between;
+        width: 90%;
+        margin: 1em auto;
+    }
+
+    .sorter-form {
+
+        width: 200px;
+        padding: 5px 10px;
+    }
+}

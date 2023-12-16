@@ -53,6 +53,43 @@
     transform: scale(.98);
 }
 
+@media screen and (min-width: 1500px) {
+
+    .shop-category {
+
+        padding: 2em 3em;
+        padding-top: 550px;
+        position: relative;
+    }
+
+    .banner {
+
+        margin: 0 auto;
+        height: 500px;
+        width: 100%;
+        position: absolute;
+        top: 2em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .products {
+
+        gap: 50px;
+    }
+
+    .explore-btn {
+
+        width: 100%;
+    }
+
+    .explore-btn button {
+
+        padding: 20px 40px;
+        font-size: 1.4rem;
+    }
+}
+
 
 @media screen and (max-width: 1050px) {
 
