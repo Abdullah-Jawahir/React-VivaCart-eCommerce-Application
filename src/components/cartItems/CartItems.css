@@ -42,6 +42,13 @@
     justify-content: center;
 }
 
+.cart-items-rows .empty-msg {
+
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
 .cart-items-rows .row-item {
 
     color: #636363;
@@ -88,7 +95,7 @@
         padding: 1em;
         padding-bottom: 3em;
         justify-content: start;
-        max-height: 50svh;
+        max-height: 55dvh;
         overflow-y: scroll;
     }
 
@@ -137,6 +144,13 @@
     .cart-items-rows {
 
         gap: 30px;
+    }
+
+    .cart-items-rows .empty-msg {
+
+        text-align: left;
+        font-size: 1.5rem;
+        margin-top: 0px;
     }
 
     .cart-items-rows .row-item {

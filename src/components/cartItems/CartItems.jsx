@@ -22,7 +22,7 @@ export const CartItems = () => {
                 Cart Items
             </h2>
 
-            <div className="cart-items-rows">
+            {/* <div className="cart-items-rows">
                 {all_products.map((prod) => (
                     cartProducts[prod.id] > 0 && (
                         <div className="row row-item" key={prod.id}>
@@ -41,6 +41,30 @@ export const CartItems = () => {
                     )
                 ))}
 
+            </div> */}
+
+            <div className="cart-items-rows">
+                {Object.values(cartProducts).every((value) => value === 0) ? (
+                    <p className='empty-msg'>Oh Oh! 😥 Cart is Empty</p>
+                ) : (
+                    all_products.map((prod) =>
+                        cartProducts[prod.id] > 0 ? (
+                            <div className="row row-item" key={prod.id}>
+                                <img className='prod-img' src={prod.image} alt="" />
+                                <p className='prod-title'>{prod.name}</p>
+                                <p className='prod-price'>${prod.new_price}</p>
+                                <span className='prod-quantity'>{cartProducts[prod.id]}</span>
+                                <p className='total-price'>${prod.new_price * cartProducts[prod.id]}</p>
+                                <i
+                                    className='bx bx-x remove-prod-icon'
+                                    src={removeIcon}
+                                    alt=""
+                                    onClick={() => removeFromCart(prod.id)}
+                                ></i>
+                            </div>
+                        ) : null
+                    )
+                )}
             </div>
         </div>
     )
